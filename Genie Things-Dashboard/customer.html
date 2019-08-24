@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/customer.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <!-- side menu -->
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+                <h1 class="hidden-xs hidden-sm">Genie_things</h1>
+                <ul>
+                    <li class="link settings-btn">
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Dashboard</span>
+                        </a>
+                    </li>
+
+
+                    <li class="link active">
+                        <a href="customer.html">
+                            <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Customer  Prpfile</span>
+                        </a>
+                    </li>
+
+                    <li class="link">
+                        <a href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Trip</span>
+                            <span class="label label-success pull-right hidden-xs hidden-sm">20</span>
+                        </a>
+                        <ul class="collapse collapseable" id="collapse-post">
+                            <li><a href="new-Trip.html">Create New</a></li>
+                            <li><a href="Trip.html">View Trip</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="link">
+                        <a href="Drivers.html">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Drivers</span>
+                        </a>
+                    </li>
+
+                    <li class="link ">
+                        <a href="Vehicles.html">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Vehicles</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- main content area -->
+            <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+                <div class="row">
+                    <header id="nav-header" class="clearfix">
+                        <div class="col-md-5">
+                            <nav class="navbar-default pull-left">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                  </button>
+                            </nav>
+                            <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Search for something...">
+                        </div>
+
+                        <div class="col-md-7">
+                            <ul class="pull-right">
+                                <li id="welcome" class="hidden-xs">Welcome to your administration area</li>
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                                        <span class="label label-warning">3</span>
+                                    </a>
+                                </li>
+
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                        <span class="label label-message">3</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="logout">
+                                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                </div>
+
+
+                <!-- page content-->
+                <!-- content starting-->
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="contact">
+                            <header>
+                                <h4>Customer Profile</h4>
+                            </header>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Corporation  Name</label>
+                                            <input type="text" class="form-control" placeholder="Company Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Corporation Website </label>
+                                            <input type="text" class="form-control" placeholder="like--> www.example.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label> Location :</label> <br/>
+                                        <div class="form-group">
+                                            <label>Address  </label>
+                                            <input type="text" class="form-control" placeholder="text address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label>Location On Map  </label>
+                                            <input type="text" class="form-control" placeholder="enter your location">
+                                        </div>
+                                    </div>
+
+                                    <label>Add Location</label>
+                                    <a class="btn btn-primary  " href="https://www.google.com.eg/maps/@30.0564589,31.3255686,15z?hl=en" role="button">Go-Maps</a>
+
+                                    <div class="col-md-6">
+                                        <label>Customer Type</label>
+                                        <select class="form-control" placeholder="Customer Type">
+                                            <option></option>
+                                            <option>type 1</option>
+                                            <option>type 2</option>
+                                            <option>type 3</option>
+                                            <option>type 3</option>
+                                            <option>type 7</option>                                           
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Telephone Number</label>
+                                            <input type="text" class="form-control" placeholder="telephone number">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Comment</label>
+                                            <textarea rows="5" class="form-control" placeholder="Here can be your description" value=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary btn-fill ">Submit</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 text-center">
+                            <div class="thumbnail">
+                                <img src="imges/noby3.png" alt="...">
+                                <div class="caption">
+                                    <h3>Mahmoud Noby</h3>
+                                    <h5>15 mauo Helwan-Eygpt </h5>
+                                    <h5>mobile:01234567 tel:+2-25526271</h5>
+                                    <h6>Email Address:<a href="#"> mahmoudnoby146@outlook.com</a></h6>
+                                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <footer id="foot" class="clearfix">
+                        <div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+                        <div class="pull-right">Genei things platform</div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
